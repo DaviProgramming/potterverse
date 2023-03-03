@@ -4,6 +4,7 @@
 
   --black-color: #060604;
   --white-color: #f6f1d3;
+  --grey-color: #232323;
 
   --color-one: #b80f12;
   --color-two: #710002;
@@ -14,6 +15,7 @@
   --margin-1: 15px;
   --margin-2: 25px;
   --margin-3: 50px;
+
   --border-radius-1: 10px;
 }
 
@@ -273,10 +275,12 @@ form .input-error {
 }
 
 .last-news h1.title {
+  text-align: center;
   margin-bottom: var(--margin-3);
   font-size: 3rem;
   z-index: 2;
   text-transform: uppercase;
+  
 }
 
 .last-news .cards {
@@ -301,7 +305,6 @@ form .input-error {
   );
   -webkit-clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0% 40%);
   clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0% 40%);
-
 }
 
 .last-news .card-img {
@@ -314,7 +317,7 @@ form .input-error {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 10px solid white;
+ 
 }
 
 .card-text {
@@ -332,7 +335,7 @@ form .input-error {
   bottom: 0;
 }
 
-.last-news a{
+.last-news a {
   color: var(--white-color);
 }
 
@@ -342,14 +345,51 @@ form .input-error {
   font-weight: 800;
 }
 
-footer{
+footer {
+  padding: 20px 0px;
   width: 100vw;
- min-height: 15vh;
-  background:linear-gradient(
-    to bottom,
-    var(--color-two)70%,
-    var(--black-color) 100%
-  );
+  min-height: 15vh;
+  background: linear-gradient(to bottom, var(--color-two) -90%, var(--white-color) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+footer .social-medias{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-medias ul{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+footer .social-medias ul a{
+  color: #232323;
+  font-size: 1.5rem ;
+}
+
+
+footer .copyright{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--grey-color);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
@@ -423,7 +463,12 @@ footer{
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   }
 
+  
   .last-news .background-img {
     width: 100%;
+  }
+
+  .last-news h1.title{
+    text-shadow: 0px 1px 1px var(--black-color);
   }
 }
