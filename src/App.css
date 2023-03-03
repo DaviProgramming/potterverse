@@ -288,7 +288,7 @@ object-fit: cover;
   
 
   form{
-    padding-left:  10px;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
