@@ -1,7 +1,9 @@
 import { React,  useState } from 'react'
+import InputMessage from './inputMessage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import heroImage from '../assets/harry-wallpaper-2.jpg';
+
 const Hero = () => {
 
 
@@ -23,7 +25,7 @@ const Hero = () => {
                         <div className="form-control">
                             <input type="text" placeholder='Digite seu melhor Email' onChange={e => setInputValue(e.target.value)} />
                             
-                             <span className='input-error'>Digite um Email valido !</span>
+                             <InputMessage value={inputValue} />
                         </div>
 
                         <button className='button' type='button' onClick={(e)=>{console.log(inputValue)}}><FontAwesomeIcon icon={faPaperPlane} /></button>
