@@ -6,14 +6,21 @@ const InputMessage = (props) => {
         return re.test(email);
       }
 
-    if((props.value).length >= 1){
+    if(props.sendCheck == true){
 
-        if(validateEmail(props.value) == false){
-            return (
-                <span className='input-error'>Digite um Email valido !</span>
-              )
+        if((props.inputValue).length >= 1){
+
+            if(validateEmail(props.inputValue) == false){
+                return (
+                    <span className='input-error'>Digite um Email valido !</span>
+                  )
+            }
+    
+            else{
+                return;
+            }
         }
-
+    
         else{
             return;
         }
@@ -22,6 +29,8 @@ const InputMessage = (props) => {
     else{
         return;
     }
+
+   
  
 }
 

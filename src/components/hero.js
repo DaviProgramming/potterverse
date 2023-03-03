@@ -8,9 +8,31 @@ const Hero = () => {
 
 
     const [inputValue, setInputValue] = useState("");
+    const [sendCheck, setInputCheck] = useState(false)
 
     const validations = {
+        
         inputValidation(value){
+
+            setInputValue(value);
+
+            if(value >= 1){
+                return;
+            }
+
+            else{
+                setInputCheck(false);
+            }
+           
+        },
+        inputValidationButton(){
+
+            if(inputValue.length >= 1){
+                setInputCheck(true);
+            }
+            else{
+                setInputCheck(false);
+            }
 
         }
     }
@@ -23,12 +45,12 @@ const Hero = () => {
                     <div className="hero-text">Receba as mais diversas informações sobre <span>Harry potter</span></div>
                     <form>
                         <div className="form-control">
-                            <input type="text" placeholder='Digite seu melhor Email' onChange={e => setInputValue(e.target.value)} />
+                            <input type="text" placeholder='Digite seu melhor Email' onChange={e => validations.inputValidation(e.target.value)} />
                             
-                             <InputMessage value={inputValue} />
+                             <InputMessage sendCheck={sendCheck} inputValue={inputValue} />
                         </div>
 
-                        <button className='button' type='button' onClick={(e)=>{console.log(inputValue)}}><FontAwesomeIcon icon={faPaperPlane} /></button>
+                        <button className='button' type='button' onClick={()=>{ validations.inputValidationButton()}}><FontAwesomeIcon icon={faPaperPlane} /></button>
 
 
                     </form>
