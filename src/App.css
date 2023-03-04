@@ -352,7 +352,7 @@ footer {
   padding: 20px 0px;
   width: 100vw;
   min-height: 15vh;
-  background: linear-gradient(to bottom, var(--color-two) -90%, var(--white-color) 100%);
+  background: linear-gradient(to bottom, var(--color-two) 0%, var(--color-one) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -379,8 +379,16 @@ footer .social-medias ul{
 }
 
 footer .social-medias ul a{
-  color: #232323;
+  color: var(--white-color);
   font-size: 1.5rem ;
+ 
+}
+
+footer .social-medias ul a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0%;
 }
 
 
@@ -390,9 +398,9 @@ footer .copyright{
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--grey-color);
-  font-size: 1.2rem;
-  font-weight: 600;
+  color: var(--white-color);
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
