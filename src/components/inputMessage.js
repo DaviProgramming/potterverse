@@ -17,7 +17,9 @@ const InputMessage = (props) => {
             }
     
             else{
-                return;
+               return (
+                <span className='input-sucess'>Registrado com sucesso !</span>
+               )
             }
         }
     
