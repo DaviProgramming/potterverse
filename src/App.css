@@ -29,31 +29,7 @@ body {
   overflow-x: hidden;
 }
 
-nav {
-  margin-top: var(--margin-1);
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  z-index: 2;
-}
 
-nav .navbar-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--gap-1);
-}
-
-nav .navbar-content span {
-  text-shadow: 0px 0px 5px var(--black-color);
-}
-
-nav img {
-  width: 50px;
-}
 
 .container {
   height: 100vh;
@@ -246,113 +222,13 @@ form .input-error {
   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
-.last-news {
-  position: relative;
-  height: max-content;
-  min-height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    var(--color-one) 50%,
-    var(--color-two) 100%
-  );
-  flex-direction: column;
-}
 
-.last-news .background-img {
-  position: absolute;
-
-  right: 10px;
-
-  width: 30%;
-  height: 100%;
-}
-
-.last-news .background-img img {
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-  object-fit: cover;
-}
-
-.last-news h1.title {
-  text-align: center;
-  margin-bottom: var(--margin-3);
-  font-size: 3rem;
-  z-index: 2;
-  text-transform: uppercase;
-  
-}
-
-.last-news .cards {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  place-items: center;
-  gap: var(--gap-1);
-  z-index: 2;
-}
-
-.last-news .card {
-  position: relative;
-  height: 300px;
-  width: 300px;
-
-  background: linear-gradient(
-    to bottom,
-    transparent -5%,
-    var(--black-color) 100%
-  );
-  -webkit-clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0% 40%);
-  clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0% 40%);
-}
-
-
-
-.last-news .card-img {
-  width: 100%;
-  height: 100%;
-  background: black;
-}
-
-.last-news .card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
- 
-}
-
-.card-text {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(
-    to bottom,
-    transparent -5%,
-    var(--black-color) 100%
-  );
-  bottom: 0;
-}
-
-.last-news a {
-  color: var(--white-color);
-}
-
-.card-text .title {
-  width: 70%;
-  font-size: 0.8rem;
-  font-weight: 800;
-}
 
 footer {
   padding: 20px 0px;
   width: 100vw;
   min-height: 15vh;
-  background: linear-gradient(to bottom, var(--color-two) 0%, var(--color-one) 100%);
+  background: linear-gradient(to top, var(--color-two) 0%, var(--color-one) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -377,6 +253,7 @@ footer .social-medias ul{
   align-items: center;
   gap: 50px;
 }
+
 
 footer .social-medias ul a{
   color: var(--white-color);
