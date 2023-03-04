@@ -6,11 +6,11 @@ const InputMessage = (props) => {
         return re.test(email);
       }
 
-    if(props.sendCheck == true){
+    if(props.sendCheck === true){
 
         if((props.inputValue).length >= 1){
 
-            if(validateEmail(props.inputValue) == false){
+            if(validateEmail(props.inputValue) === false){
                 return (
                     <span className='input-error'>Digite um Email valido !</span>
                   )

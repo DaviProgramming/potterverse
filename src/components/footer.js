@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithubAlt, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import logo from '../assets/logo.png'
+
 const Footer = () => {
   return (
     <footer>
@@ -9,9 +9,9 @@ const Footer = () => {
 
       <div className="social-medias">
         <ul>
-          <li><a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
-          <li><a href="#"><FontAwesomeIcon icon={faGithubAlt} /></a></li>
-          <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
+          <li><a href="https://www.linkedin.com/in/davidoliveiradev/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+          <li><a href="https://github.com/DaviProgramming" target="_blank"><FontAwesomeIcon icon={faGithubAlt} /></a></li>
+          <li><a href="https://www.instagram.com/asdavidoliveira/"  target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
         </ul>
       </div>
 
